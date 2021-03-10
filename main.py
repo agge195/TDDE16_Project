@@ -73,7 +73,6 @@ X_train, X_test, y_train, y_test = preprocess(X, y, vocabulary_size, input_lengt
 model = build_LSTM(vocabulary_size, input_length, X_train, y_train, X_test, y_test, tune=False)
 # model = build_bidirectional_LSTM(vocabulary_size, input_length)
 do_LSTM(model, X_train, X_test, y_train, y_test)
-# do_lasso(X_train, X_test, y_train, y_test)
 # do_Multinomial_NaiveBayes(X_train, y_train, X_test, y_test)
 # do_all_plot_roc(X_train, X_test, y_train, y_test)
 # do_XGBoost(X_train, y_train, X_test, y_test, tune=False)
